@@ -1,0 +1,307 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url(fonts/Raleway-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(fonts/Raleway-Medium.ttf);
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(fonts/Raleway-SemiBold.ttf);
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(fonts/Montserrat-Light.ttf);
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(fonts/Montserrat-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+.body {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+button, button:hover, button:active {
+    border: none;
+    outline: none;
+}
+
+/* *, :hover {
+    transition: 0.3s;
+} */
+
+.wrapper {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.header {
+    margin:0 auto;
+    padding: 39px 160px 0;
+    background-image: url(images/bg_header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    max-width: 1920px;
+    height: 1024px;
+    box-sizing: border-box;
+    justify-content: space-between;
+  }
+
+.header-arrow {
+    width: 40px;
+    height: 73px;
+    margin-top: 412px;
+    background: none;
+    fill:rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
+}
+
+.header-arrow:hover {
+    fill: #D3C1AC;
+}
+
+.topper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    /* transition: 0.3s; */
+}
+
+.logo-text {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 40px;
+    transition: 0.3s;
+}
+
+.logo-svg {
+    fill: white;
+    transition: 0.3s;
+}
+
+.logo:hover svg {
+    fill: #C7B299;
+    
+}
+
+.logo:hover span {
+    color: #C7B299;
+}
+
+.nav {
+display: flex;
+align-items: center;
+}
+
+.nav-item {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    margin-right: 24px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-item-icon {
+    margin-left: 30px;
+    fill: white;
+    transition: 0.3s;
+}
+
+.nav-item:hover {
+    color: #C7B299; 
+}
+
+.nav-item-icon:hover {
+    fill: #C7B299; 
+}
+
+.slider-content {
+    margin: 315px auto 0;
+    text-align: center;
+}
+
+.slider-h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+
+.slider-h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 61px;
+    color: #FFFFFF;
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.slider-text {
+    font-weight: 400;
+    max-width: 45%;
+    margin: 4px auto 39px;
+    box-sizing: border-box;
+}
+
+.slider-btn {
+    display: block;
+    width: 170px;
+    height: 53px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    box-sizing: border-box;
+    background: #988574;
+    border-radius: 3px;
+    border: none;
+    transition: 0.3s;
+}
+
+.slider-btn:hover {
+    background: #ad9c8c;
+}
+
+
+
+.pagination {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 312px;
+}
+
+.pagination-item {
+    display: inline-block;
+    margin: 0 5px;
+    width: 6px;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.pagination-item:hover {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transform: scale(1.4);
+}
+
+.jobs {
+    margin: 54px auto 0;
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.jobs-item {
+    width: 23%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.jobs-item-icon {
+    margin: 0 auto;
+    height: 106px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #555555;
+}
+
+.jobs-h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: #555555;
+    text-align: center;
+}
+
+.jobs-text {
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+    margin-top: 20px;
+}
+
+.jobs-bottomline {
+    width: 70px;
+    height: 3px;
+    background: #F1EEE9;
+    margin: 30px auto 0;
+}
+
+.jobs-item:hover .jobs-item-icon {
+    fill: #C7B299;
+}
+
+.jobs-item:hover .jobs-h2 {
+    color: #C7B299;
+}
+
+.jobs-item:hover .jobs-bottomline {
+    background: #C7B299;
+}
+
+
+.realization {
+    margin-top: 167px;
+}
