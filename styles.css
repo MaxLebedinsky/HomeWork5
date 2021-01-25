@@ -66,6 +66,7 @@ button, button:hover, button:active {
     background-size: cover;
     background-position: center;
     /* max-width: 1920px;  */
+    /* position: relative; */
     height: 1024px;
     box-sizing: border-box;
   }
@@ -74,7 +75,7 @@ button, button:hover, button:active {
     width: 40px;
     height: 73px;
     position: absolute;
-    top: 412px;
+    top: 42px;
     left: -165px;
     background: none;
     fill:rgba(255, 255, 255, 0.5);
@@ -85,7 +86,7 @@ button, button:hover, button:active {
     width: 40px;
     height: 73px;
     position: absolute;
-    top: 412px;
+    top: 42px;
     right: -165px;
     background: none;
     fill:rgba(255, 255, 255, 0.5);
@@ -166,6 +167,7 @@ align-items: center;
 .slider-content {
     margin: 315px auto 0;
     text-align: center;
+    position: relative;
 }
 
 .slider-h2 {
